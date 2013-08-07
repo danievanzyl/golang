@@ -1,6 +1,7 @@
+//Main
+
 package main
 
-//Importing stuff
 import (
     "fmt"
     "time"
@@ -15,7 +16,8 @@ func pinger(c chan string) {
 func printer(c chan string) {
     for {
         msg := <- c
-        fmt.Println(strconv.Itoa(time.Now()) + ": "+ msg)
+        fmt.Println(time.Now())
+        fmt.Println(msg)
         time.Sleep(time.Second * 1)
     }
 }

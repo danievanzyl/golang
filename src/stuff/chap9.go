@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"time"
 )
 
 
@@ -23,4 +24,5 @@ func main() {
 	fmt.Println(c.area())
 	fmt.Println(d.x, d.y, d.r)
 	fmt.Println(d.area())
+	fmt.Println(time.Now())
 }
